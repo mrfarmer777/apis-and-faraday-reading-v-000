@@ -11,6 +11,7 @@ class SearchesController < ApplicationController
       req.params['near']=params[:zipcode]
       req.paramsp['query']='coffee shop'
     end
+    render 'search'
   end
-  render 'search'
+  
 end
